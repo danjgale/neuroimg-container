@@ -1,0 +1,30 @@
+name: fmri
+channels:
+  - defaults
+  - conda-forge
+  - bioconda
+dependencies:
+- python>=3.7
+- numpy
+- scipy
+- pandas
+- ipython
+- jupyter
+- jupyterlab
+- scikit-learn
+- matplotlib
+- seaborn
+- statsmodels
+- pytest
+- pymvpa
+- traits
+- natsort
+- rpy2
+- pyqt
+- nodejs
+- yarn
+- pip:
+  - nibabel
+  - nilearn
+  - nipype
+  - nistats

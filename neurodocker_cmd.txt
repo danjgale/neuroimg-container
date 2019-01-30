@@ -1,0 +1,11 @@
+neurodocker generate docker --base=debian:stretch --pkg-manager=apt \
+  --copy environment.yml /opt/environment.yml \
+  --miniconda create_env=neuro \
+              yaml_file=/opt/environment.yml \
+  --fsl version=5.0.10 method=binaries \
+  --freesurfer version=6.0.0 method=binaries \
+  --afni version=latest method=binaries \
+  --ants version=latest method=source \
+  --matlabmcr version=2018a method=binaries \
+  --spm12 version=r7219 method=binaries \
+  --json
